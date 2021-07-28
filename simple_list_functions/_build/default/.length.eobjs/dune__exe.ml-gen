@@ -1,0 +1,6 @@
+(** @canonical Dune__exe.Last *)
+module Last = Dune__exe__Last
+
+
+(** @canonical Dune__exe.Length *)
+module Length = Dune__exe__Length

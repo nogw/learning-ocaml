@@ -5,7 +5,7 @@ let rec lastItem =
   | _ :: x -> lastItem x
 ;;
 
-let _ = 
-  lastItem [2; 3; 4] 
-  |> Option.iter (Printf.printf "%d") 
+let () = 
+  lastItem [2; 3; 4; 2; 1]
+  |> Option.iter (Printf.printf "%d")
 ;;
