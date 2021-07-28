@@ -1,0 +1,6 @@
+(** @canonical Dune__exe.Sum *)
+module Sum = Dune__exe__Sum
+
+
+(** @canonical Dune__exe.SumArgsCLI *)
+module SumArgsCLI = Dune__exe__SumArgsCLI
