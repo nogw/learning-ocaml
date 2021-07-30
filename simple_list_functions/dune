@@ -1,2 +1,2 @@
 (executable
- (name length))
+ (name print_list))

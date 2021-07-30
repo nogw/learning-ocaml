@@ -1,6 +1,4 @@
-let rec length = function
+let rec tamanho = function
   | [] -> 0
-  | _::tl -> 1 + length tl
+  | _::xs -> 1 + tamanho xs
 ;;
-
-length [1; 2; 4]

@@ -4,3 +4,7 @@ module Last = Dune__exe__Last
 
 (** @canonical Dune__exe.Length *)
 module Length = Dune__exe__Length
+
+
+(** @canonical Dune__exe.Print_list *)
+module Print_list = Dune__exe__Print_list
