@@ -1,0 +1,6 @@
+(** @canonical Dune__exe.Operations *)
+module Operations = Dune__exe__Operations
+
+
+(** @canonical Dune__exe.Reuse *)
+module Reuse = Dune__exe__Reuse

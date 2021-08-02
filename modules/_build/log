@@ -1,10 +1,10 @@
-# dune exec ./modules.exe 22 3
+# dune exec ./reuse.exe
 # OCAMLPARAM: unset
 # Workspace root: /home/nogw/Desktop/ocaml/modules
-$ /usr/bin/nproc > /tmp/dune030bf8.output 2> /dev/null
+$ /usr/bin/nproc > /tmp/duneff05ec.output 2> /dev/null
 # Auto-detected concurrency: 2
 # disable binary cache
-$ /home/nogw/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dune6b0a3c.output
+$ /home/nogw/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/duneb38ede.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
