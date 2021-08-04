@@ -1,8 +1,3 @@
-(* let print_list = function
-  | [] -> []
-  | _ -> List.iter (Printf.printf "%d ") x
-;; *)
-
 let rec print_list = function
   | [] -> []
   | hd :: tl -> Printf.printf "%d;" hd; print_list tl  
