@@ -1,0 +1,2 @@
+# dune init exe recursive_variants
+# OCAMLPARAM: unset
