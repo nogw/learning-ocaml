@@ -1,0 +1,2 @@
+(executable
+ (name famous_higher_order_functions))
