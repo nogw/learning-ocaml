@@ -23,3 +23,12 @@ let take_reverse n l =
         aux (a + 1) (nl @ [h]) t 
   in
     aux 0 [] l 
+
+
+let _ = 
+  let lst = [1; 3; 5; 2; 5; 6] in (
+    take_reverse 4 lst |> print_list,
+    print_endline " ",
+    take 4 lst |> print_list;
+  );;
+;;
