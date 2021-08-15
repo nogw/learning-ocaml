@@ -1,0 +1,2 @@
+(executable
+ (name abstraction_principle))

@@ -1,2 +1,2 @@
 dune-project
-_build
+./cs3110/*/_build
