@@ -1,0 +1,2 @@
+(executable
+ (name fold_left_vs_fold_right))

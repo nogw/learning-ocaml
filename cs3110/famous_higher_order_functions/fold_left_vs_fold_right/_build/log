@@ -1,0 +1,2 @@
+# dune init exe fold_left_vs_fold_right
+# OCAMLPARAM: unset
