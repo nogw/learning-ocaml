@@ -1,0 +1,2 @@
+(executable
+ (name using_fold_to_implement_other_functions))
