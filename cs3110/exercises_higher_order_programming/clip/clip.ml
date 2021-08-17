@@ -2,12 +2,12 @@ let clip n =
   if n < 0 then 0 
   else if n > 10 then 10
   else n
-
-let rec print_list = 
-  function
-  | [] -> []
-  | h::t -> Printf.printf "%d ;" h; print_list t 
-
+let print_list l = 
+  let lst = l
+    |> List.map string_of_int
+    |> String.concat "; "
+  in
+    print_endline ("[" ^ lst ^ "]")
 let maplist f l = 
   let rec aux lst nl = 
     match lst with
