@@ -20,6 +20,9 @@ let _ =
     )
   and square = fun x -> x * 2
   in (
-    print_endline (print_tree t),
-    print_endline (print_tree (map_tree square t)) 
+    print_tree t 
+      |> print_endline,
+    map_tree square t 
+      |> print_tree 
+      |> print_endline
   )
