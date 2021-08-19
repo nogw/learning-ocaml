@@ -34,5 +34,4 @@ end
 
 module ListStack : Stack = struct
   type 'a stack = 'a list
-  (* the rest is the same as before *)
 end
