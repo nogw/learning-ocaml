@@ -1,0 +1,2 @@
+(executable
+ (name data_structure_arithmetic))
