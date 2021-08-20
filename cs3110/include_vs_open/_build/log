@@ -1,0 +1,2 @@
+# dune init exe include_vs_open
+# OCAMLPARAM: unset
