@@ -1,0 +1,2 @@
+(executable
+ (name semantic_includes))
