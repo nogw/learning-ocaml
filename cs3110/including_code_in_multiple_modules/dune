@@ -1,0 +1,2 @@
+(executable
+ (name including_code_in_multiple_modules))
