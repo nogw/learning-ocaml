@@ -1,0 +1,2 @@
+(executable
+ (name stardard_library_map))
