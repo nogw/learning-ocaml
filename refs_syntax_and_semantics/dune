@@ -1,0 +1,2 @@
+(executable
+ (name refs_syntax_and_semantics))

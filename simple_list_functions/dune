@@ -1,2 +1,0 @@
-(executable
- (name reverse_list))
