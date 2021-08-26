@@ -1,0 +1,2 @@
+# dune init exe mutable_fields
+# OCAMLPARAM: unset
