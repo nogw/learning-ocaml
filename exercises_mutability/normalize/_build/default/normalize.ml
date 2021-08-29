@@ -1,10 +1,15 @@
-(* let normalize a = 
-  Array.iteri (fun x y -> y.(x) <- 0.7) a
+let norm v =
+  let atr = fun x -> x ** 2. in
+  v 
+  |> Array.map atr 
+  |> Array.fold_left (+.) 0. 
+  |> Float.sqrt
+
+let normalize l = 
+  let nw = norm l in
+  Array.iteri (fun x y -> l.(x) <- y /. nw) l
+
+let l = [| 1. ; 1. |]
 
 let _ = 
-  let lst = [| 1.; 2. |] in
-  normalize lst *)
-
-let _ = 
-let l = [| 1. ; 2. ; 3. |] in
-Array.iteri (fun x y -> l.(x) <- y) l
+  normalize l

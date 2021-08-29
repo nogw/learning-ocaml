@@ -2,10 +2,10 @@
 # OCAMLPARAM: unset
 # Workspace root:
 # /home/nogw/Desktop/learning-ocaml/exercises_mutability/normalize
-$ /usr/bin/nproc > /tmp/dune259118.output 2> /dev/null
+$ /usr/bin/nproc > /tmp/dune282cc0.output 2> /dev/null
 # Auto-detected concurrency: 2
 # disable binary cache
-$ /home/nogw/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dunee8d73f.output
+$ /home/nogw/.opam/4.12.0/bin/ocamlc.opt -config > /tmp/dune113c0f.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
