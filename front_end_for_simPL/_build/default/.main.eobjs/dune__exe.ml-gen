@@ -1,0 +1,14 @@
+(** @canonical Dune__exe.Ast *)
+module Ast = Dune__exe__Ast
+
+
+(** @canonical Dune__exe.Lexer *)
+module Lexer = Dune__exe__Lexer
+
+
+(** @canonical Dune__exe.Main *)
+module Main = Dune__exe__Main
+
+
+(** @canonical Dune__exe.Parser *)
+module Parser = Dune__exe__Parser

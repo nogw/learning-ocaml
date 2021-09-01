@@ -1,0 +1,8 @@
+"Rule: ocaml: menhir dependencies (%=parser )": "\174\150\181\228\019\168\152\173\175\002\164\157\189\026\158\186"
+"Rule: ocaml: ml -> cmo & cmi (%=ast )": "\225,\166\003~\234+\019\138m\192|s\201\029\247"
+"Rule: ocamllex (%=lexer )": "\167\165\003\128;l\210\014\007\203_v\021\1590\131"
+"Resource: /home/nogw/Desktop/learning-ocaml/front_end_for_simPL/ast.ml": "\153\017\222\127\231\249\023Zu\186W\154=\031 \b"
+"Resource: /home/nogw/Desktop/learning-ocaml/front_end_for_simPL/parser.mly": "\238\140\000\139\154\235\247\207\0124\134eU\2075\249"
+"Rule: ocaml dependencies ml (%=ast )": "I\196\127\246\220\027\190\227\021\023G\012t_j\134"
+"Resource: /home/nogw/Desktop/learning-ocaml/front_end_for_simPL/lexer.mll": "\223\022\211\160%\026\023\142\001C\007\185 \031~\220"
+"Rule: ocaml: menhir (%=parser )": "\001+C=[\011\012\173\181\011ie\215<\135="
