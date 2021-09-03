@@ -39,7 +39,7 @@ let rec typeof ctx = function
   | Let (x, e1, e2) -> typeof_let ctx x e1 e2
   | Binop (bop, e1, e2) -> typeof_bop ctx bop e1 e2
   | If (e1, e2, e3) -> typeof_if ctx e1 e2 e3
-  
+
 and typeof_let ctx x e1 e2 =
   let t1 = typeof ctx e1 in
   let ctx' = extend ctx x t1 in
@@ -65,6 +65,10 @@ and typeof_if ctx e1 e2 e3 =
   else 
     failwith "Guard of if must have type bool"
 
+let infer (e: string) =
+  let s = parse e in
+  typeof empty s
+  
 let typecheck e =
   ignore (typeof empty e)
 
