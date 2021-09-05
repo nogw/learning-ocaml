@@ -26,6 +26,7 @@ of the language are. Here are the token declarations for SimPL: *)
 %token IF
 %token THEN
 %token ELSE
+%token COMMA
 %token EOF
 
 (* Each of these is just a descriptive name for the token. 
@@ -89,6 +90,7 @@ expr:
     e2 = expr { Let (x, e1, e2) }
   | IF; e1 = expr; THEN; e2 = expr; ELSE; e3 = expr { If (e1, e2, e3) }
   | LPAREN; e=expr; RPAREN {e}
+  | LPAREN; e1 = expr; COMMA; e2 = expr; RPAREN { Pairs (e1, e2) }
   ;
 
 (*The first production, i = INT, says to match an INT token, 

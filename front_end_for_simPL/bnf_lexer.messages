@@ -1,0 +1,279 @@
+prog: IF TIMES
+##
+## Ends in an error in state: 7.
+##
+## expr -> IF . expr THEN expr ELSE expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: IF TRUE THEN TIMES
+##
+## Ends in an error in state: 13.
+##
+## expr -> IF expr THEN . expr ELSE expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF expr THEN
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: IF TRUE THEN TRUE ELSE TIMES
+##
+## Ends in an error in state: 19.
+##
+## expr -> IF expr THEN expr ELSE . expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF expr THEN expr ELSE
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: IF TRUE THEN TRUE ELSE TRUE TRUE
+##
+## Ends in an error in state: 20.
+##
+## expr -> expr . LEQ expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . TIMES expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . PLUS expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> IF expr THEN expr ELSE expr . [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF expr THEN expr ELSE expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: IF TRUE THEN TRUE TRUE
+##
+## Ends in an error in state: 14.
+##
+## expr -> expr . LEQ expr [ TIMES PLUS LEQ ELSE ]
+## expr -> expr . TIMES expr [ TIMES PLUS LEQ ELSE ]
+## expr -> expr . PLUS expr [ TIMES PLUS LEQ ELSE ]
+## expr -> IF expr THEN expr . ELSE expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF expr THEN expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: IF TRUE TRUE
+##
+## Ends in an error in state: 10.
+##
+## expr -> expr . LEQ expr [ TIMES THEN PLUS LEQ ]
+## expr -> expr . TIMES expr [ TIMES THEN PLUS LEQ ]
+## expr -> expr . PLUS expr [ TIMES THEN PLUS LEQ ]
+## expr -> IF expr . THEN expr ELSE expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## IF expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET ID EQUALS TIMES
+##
+## Ends in an error in state: 5.
+##
+## expr -> LET ID EQUALS . expr IN expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET ID EQUALS
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET ID EQUALS TRUE IN TIMES
+##
+## Ends in an error in state: 22.
+##
+## expr -> LET ID EQUALS expr IN . expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET ID EQUALS expr IN
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET ID EQUALS TRUE IN TRUE TRUE
+##
+## Ends in an error in state: 23.
+##
+## expr -> expr . LEQ expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . TIMES expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . PLUS expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> LET ID EQUALS expr IN expr . [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET ID EQUALS expr IN expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET ID EQUALS TRUE TRUE
+##
+## Ends in an error in state: 21.
+##
+## expr -> expr . LEQ expr [ TIMES PLUS LEQ IN ]
+## expr -> expr . TIMES expr [ TIMES PLUS LEQ IN ]
+## expr -> expr . PLUS expr [ TIMES PLUS LEQ IN ]
+## expr -> LET ID EQUALS expr . IN expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET ID EQUALS expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET ID TRUE
+##
+## Ends in an error in state: 4.
+##
+## expr -> LET ID . EQUALS expr IN expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET ID
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LET TRUE
+##
+## Ends in an error in state: 3.
+##
+## expr -> LET . ID EQUALS expr IN expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LET
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LPAREN TIMES
+##
+## Ends in an error in state: 2.
+##
+## expr -> LPAREN . expr RPAREN [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LPAREN
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: LPAREN TRUE TRUE
+##
+## Ends in an error in state: 24.
+##
+## expr -> expr . LEQ expr [ TIMES RPAREN PLUS LEQ ]
+## expr -> expr . TIMES expr [ TIMES RPAREN PLUS LEQ ]
+## expr -> expr . PLUS expr [ TIMES RPAREN PLUS LEQ ]
+## expr -> LPAREN expr . RPAREN [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## LPAREN expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TIMES
+##
+## Ends in an error in state: 0.
+##
+## prog' -> . prog [ # ]
+##
+## The known suffix of the stack is as follows:
+##
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE LEQ TIMES
+##
+## Ends in an error in state: 17.
+##
+## expr -> expr LEQ . expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## expr LEQ
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE LEQ TRUE TRUE
+##
+## Ends in an error in state: 18.
+##
+## expr -> expr . LEQ expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr LEQ expr . [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . TIMES expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . PLUS expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## expr LEQ expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE PLUS TIMES
+##
+## Ends in an error in state: 15.
+##
+## expr -> expr PLUS . expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## expr PLUS
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE PLUS TRUE TRUE
+##
+## Ends in an error in state: 16.
+##
+## expr -> expr . LEQ expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . TIMES expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr . PLUS expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+## expr -> expr PLUS expr . [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## expr PLUS expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE TIMES TIMES
+##
+## Ends in an error in state: 11.
+##
+## expr -> expr TIMES . expr [ TIMES THEN RPAREN PLUS LEQ IN EOF ELSE ]
+##
+## The known suffix of the stack is as follows:
+## expr TIMES
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
+prog: TRUE TRUE
+##
+## Ends in an error in state: 27.
+##
+## expr -> expr . LEQ expr [ TIMES PLUS LEQ EOF ]
+## expr -> expr . TIMES expr [ TIMES PLUS LEQ EOF ]
+## expr -> expr . PLUS expr [ TIMES PLUS LEQ EOF ]
+## prog -> expr . EOF [ # ]
+##
+## The known suffix of the stack is as follows:
+## expr
+##
+
+<YOUR SYNTAX ERROR MESSAGE HERE>
+
