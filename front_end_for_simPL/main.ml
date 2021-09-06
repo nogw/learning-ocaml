@@ -74,9 +74,15 @@ let infer (e: string) =
 let typecheck e =
   ignore (typeof empty e)
 
-let is_value : expr -> bool = 
+let rec is_value : expr -> bool = 
   function
   | Int _ | Bool _ -> true
+  | Pairs (e1, e2) ->
+    begin
+      match e1, e2 with
+      | Int _, Int _ -> true
+      | _ -> false
+    end
   | Var _ | Let _ | Binop _ | If _  -> false
 
 let rec subst e v x = 
