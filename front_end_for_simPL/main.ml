@@ -99,6 +99,8 @@ let rec subst e v x =
       Let (y, e1', subst e2 v x)
   | If (e1, e2, e3) ->
     If (subst e1 v x, subst e2 v x, subst e3 v x) 
+  | Pairs (e1, e2) ->
+      Pairs (subst e1 v x, subst e2 v x)
 
 let rec step : expr -> expr = function
   | Int _ | Bool _ -> failwith "Does not step" 
@@ -114,6 +116,10 @@ let rec step : expr -> expr = function
   | If (Bool false, _, e3) -> e3
   | If (Int _, _, _) -> failwith "Guard of if must have type bool"
   | If (e1, e2, e3) -> If (step e1, e2, e3)
+  | Pairs (e1, e2) when is_value e1 && is_value e2 -> Pairs (e1, e2)
+  | Pairs (e1, _) when is_value e1 -> e1
+  | Pairs (_, e2) when is_value e2 -> e2
+  | Pairs (_, _) -> failwith "Unbound variable"
 
 and step_bop bop e1 e2 = 
   match bop, e1, e2 with
