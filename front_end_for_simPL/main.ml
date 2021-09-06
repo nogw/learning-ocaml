@@ -11,6 +11,7 @@ let parse (s: string) : expr =
 type typ = 
   | TInt
   | TBool
+  | TPairs
 
 module type Context = sig
   type t
@@ -35,6 +36,7 @@ open Context
 let rec typeof ctx = function
   | Int _ -> TInt
   | Bool _ -> TBool
+  | Pairs _ -> TPairs
   | Var x -> lookup ctx x
   | Let (x, e1, e2) -> typeof_let ctx x e1 e2
   | Binop (bop, e1, e2) -> typeof_bop ctx bop e1 e2
@@ -75,7 +77,7 @@ let typecheck e =
 let is_value : expr -> bool = 
   function
   | Int _ | Bool _ -> true
-  | Var _ | Let _ | Binop _ | If _ -> false
+  | Var _ | Let _ | Binop _ | If _  -> false
 
 let rec subst e v x = 
   match e with
